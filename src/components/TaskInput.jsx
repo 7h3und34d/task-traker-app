@@ -1,5 +1,4 @@
 import { useTaskContext } from "../context";
-import { useRef, useContext } from "react";
 import { addNewTask } from "../actions";
 import "./style.css";
 
