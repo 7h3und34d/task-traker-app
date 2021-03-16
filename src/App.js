@@ -1,15 +1,17 @@
 import "./App.css";
 import { TaskProvider } from "./context";
-import { TaskForm } from "./components/TaskForm";
 import { Tasks } from "./components/Tasks";
+import { TaskInput } from "./components/TaskInput";
 
 function App() {
   return (
     <main className="app">
-      <TaskProvider>
-        <TaskForm />
-        <Tasks />
-      </TaskProvider>
+      <div className="app-container">
+        <TaskProvider>
+          <TaskInput />
+          <Tasks />
+        </TaskProvider>
+      </div>
     </main>
   );
 }
